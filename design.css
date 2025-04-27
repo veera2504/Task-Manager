@@ -1,0 +1,108 @@
+*
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*body design*/
+body{
+    font-family:'Trebuchmet MS';
+    background-color:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh:
+}
+/*container*/
+.container{
+    background:greenyellow;
+    padding:20px;
+    border-radius: 8px;
+    width:90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+/*heading*/
+h1{
+    text-align:center;
+    margin-bottom: 20px;
+
+}
+
+/*task input*/
+
+.tast-input{
+    display:flex;
+    margin-bottom: 20px;
+}
+
+.task-input input{
+    flex:1;
+    padding:10px;
+    font-size:16px;
+}
+
+.task-input button{
+    padding:10px 15px;
+    margin-left:10px;
+    background-color:#3498db;
+    color:blue;
+    border:none;
+    cursor:crosshair;
+}
+
+.task-input button:hover{
+    background-color: #2980b9;
+}
+
+
+/*controls*/
+.task-controls{
+    margin-bottom: 20px;
+}
+
+.task-controls select{
+    width:100%;
+    padding: 8px;
+}
+
+/*task list*/
+
+taskList{
+    list-style-type:none;
+}
+
+
+.task-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task-buttons button{
+    margin-left:5px;
+    background-color: aqua;
+    border: none;
+    color: bisque;
+    padding: 5px 8px;
+    cursor: crosshair;
+    border-radius: 3px;
+}
+.task-buttons button.complete-btn{
+    background-color: beige;
+}
+
+/*Responsive*/
+@media(max-width:500px){
+    .task-input{
+        flex-direction: column;
+    }
+    .task-input button{
+        margin:10px 0 0 0;
+    }
+}
